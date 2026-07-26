@@ -1,0 +1,69 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profiles",
+      "description": "User profiles and academic settings",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "fullName": { "type": "string" },
+        "email": { "type": "string" },
+        "avatar": { "type": "string" },
+        "university": { "type": "string" },
+        "degree": { "type": "string" },
+        "semester": { "type": "string" },
+        "major": { "type": "string" },
+        "preferredStudyHours": { "type": "string" },
+        "studyGoals": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "xp": { "type": "number" },
+        "level": { "type": "number" },
+        "streak": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "lastLogin": { "type": "string" },
+        "emailVerified": { "type": "boolean" }
+      },
+      "required": ["uid", "fullName", "email"]
+    },
+    "assignments": {
+      "title": "User Assignments",
+      "description": "Assignments owned by a specific user",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "course": { "type": "string" },
+        "dueDate": { "type": "string" },
+        "priority": { "type": "string" },
+        "status": { "type": "string" },
+        "progress": { "type": "number" }
+      }
+    },
+    "projects": {
+      "title": "User Projects",
+      "description": "Projects and subtasks owned by a specific user",
+      "type": "object"
+    },
+    "notes": {
+      "title": "User Notes",
+      "description": "Notes owned by a specific user",
+      "type": "object"
+    },
+    "calendarEvents": {
+      "title": "User Calendar Events",
+      "description": "Calendar events owned by a specific user",
+      "type": "object"
+    },
+    "studySessions": {
+      "title": "User Study Sessions",
+      "description": "Pomodoro / study sessions logged by user",
+      "type": "object"
+    },
+    "notifications": {
+      "title": "User Notifications",
+      "description": "Notifications for a specific user",
+      "type": "object"
+    }
+  }
+}
