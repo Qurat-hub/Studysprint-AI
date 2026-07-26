@@ -233,7 +233,7 @@ Gemini 2.5 Flash
 ## Dashboard
 
 >
-> ![Dashboard](sceenshots/dashboard.png)
+> ![Dashboard](screenshots/dashboard.png)
 >
 
 ---
